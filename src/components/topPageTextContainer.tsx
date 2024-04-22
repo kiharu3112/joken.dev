@@ -19,7 +19,7 @@ const TopPageCopy = () => {
     'Technology.',
     'Innovation.',
     'Teammates.',
-    'Death march',
+    'Death march.',
     'Grueling development.',
   ];
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
