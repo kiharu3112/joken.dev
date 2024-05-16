@@ -13,7 +13,7 @@ import {
   Divider,
   ButtonGroup,
   SimpleGrid,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 
 export type memberProps = {
   members: Readonly<{
@@ -28,33 +28,31 @@ export type memberProps = {
 // ToDo: 画像のフォールバック考える
 const MemberCard = ({ members }: memberProps) => {
   return (
-    <SimpleGrid spacingY="2em">
+    <SimpleGrid spacingY='2em'>
       {members.map((m) => {
         return (
           <Card
-            overflow="hidden"
-            variant="outline"
-            w="100%"
-            mb="1.5em"
-            maxW="40em"
+            overflow='hidden'
+            variant='outline'
+            w='100%'
+            mb='1.5em'
+            maxW='40em'
           >
-
             <CardBody>
               <Stack mt='6' spacing='3'>
                 <Center>
                   <Image
-                    objectFit="cover"
-                    maxW={{ base: "100%", sm: "200px" }}
+                    objectFit='cover'
+                    maxW={{ base: '100%', sm: '200px' }}
                     src={m.imageUrl}
                     borderRadius='full'
                   />
                 </Center>
-                <Heading size="md">{m.nickName}</Heading>
+                <Heading size='md'>{m.nickName}</Heading>
 
-                <Text py="2">{m.realName}</Text>
-                {m.position && <Badge colorScheme="green">{m.position}</Badge>}
+                <Text py='2'>{m.realName}</Text>
+                {m.position && <Badge colorScheme='green'>{m.position}</Badge>}
               </Stack>
-
             </CardBody>
 
             <Divider />
@@ -64,12 +62,12 @@ const MemberCard = ({ members }: memberProps) => {
                   {m.link.map((link) => {
                     return (
                       <Link href={link.url}>
-                        {link.name === "twitter" ? (
-                          <Button variant="solid" colorScheme={"twitter"}>
+                        {link.name === 'twitter' ? (
+                          <Button variant='solid' colorScheme={'twitter'}>
                             {link.name}
                           </Button>
                         ) : (
-                          <Button variant="solid" colorScheme="facebook">
+                          <Button variant='solid' colorScheme='facebook'>
                             {link.name}
                           </Button>
                         )}

@@ -9,11 +9,11 @@ import {
   DrawerBody,
   Text,
   VStack,
-} from "@chakra-ui/react";
-import { HamburgerIcon, Icon } from "@chakra-ui/icons";
-import { useRef } from "react";
-import { Link } from "react-router-dom";
-import { IconType } from "react-icons";
+} from '@chakra-ui/react';
+import { HamburgerIcon, Icon } from '@chakra-ui/icons';
+import { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { IconType } from 'react-icons';
 
 export type LinkProps = {
   links: Array<{
@@ -30,7 +30,7 @@ export const Links = ({ links, onClick }: LinkProps) => {
       {links.map((l: any) => {
         return (
           <Link to={l.url} onClick={onClick}>
-            <Button w="15em" leftIcon={<Icon as={l.icon} />}>
+            <Button w='15em' leftIcon={<Icon as={l.icon} />}>
               {l.name}
             </Button>
           </Link>
@@ -48,20 +48,20 @@ export const Navigation = (props: LinkProps) => {
     <>
       <Button
         ref={btnRef}
-        colorScheme="yellow"
+        colorScheme='yellow'
         onClick={onOpen}
-        zIndex="300"
-        position="fixed"
-        top="90%"
+        zIndex='300'
+        position='fixed'
+        top='90%'
         bottom={0}
-        marginLeft="1.5em"
+        marginLeft='1.5em'
         leftIcon={<HamburgerIcon />}
       >
         メニュー
       </Button>
       <Drawer
         isOpen={isOpen}
-        placement="left"
+        placement='left'
         onClose={onClose}
         finalFocusRef={btnRef}
       >
@@ -69,11 +69,11 @@ export const Navigation = (props: LinkProps) => {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader>
-            <Text fontSize="md">松江高専情報科学研究部</Text>
+            <Text fontSize='md'>松江高専情報科学研究部</Text>
           </DrawerHeader>
 
           <DrawerBody>
-            <Links {...props} onClick={onClose}/>
+            <Links {...props} onClick={onClose} />
           </DrawerBody>
         </DrawerContent>
       </Drawer>

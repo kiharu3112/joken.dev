@@ -10,14 +10,14 @@ const members: memberProps = {
       link: [
         {
           name: 'twitter',
-          url: 'https://twitter.com/laminne33'
+          url: 'https://twitter.com/laminne33',
         },
         {
           name: 'GitHub',
-          url: 'https://github.com/laminne'
-        }
+          url: 'https://github.com/laminne',
+        },
       ],
-      imageUrl: 'https://github.com/laminne.png'
+      imageUrl: 'https://github.com/laminne.png',
     },
     {
       realName: 'kijiharu3112',
@@ -26,10 +26,10 @@ const members: memberProps = {
       link: [
         {
           name: 'GitHub',
-          url: 'https://github.com/kiji-haru'
-        }
+          url: 'https://github.com/kiji-haru',
+        },
       ],
-      imageUrl: 'https://avatars.githubusercontent.com/u/74781355?v=4'
+      imageUrl: 'https://avatars.githubusercontent.com/u/74781355?v=4',
     },
     {
       realName: 'Piano Nakanoin',
@@ -38,18 +38,19 @@ const members: memberProps = {
       link: [
         {
           name: 'twitter',
-          url: 'https://twitter.com/PianoCat1010'
+          url: 'https://twitter.com/PianoCat1010',
         },
         {
           name: 'GitHub',
-          url: 'https://github.com/NSK-1010'
+          url: 'https://github.com/NSK-1010',
         },
         {
           name: 'YouTube',
-          url: 'https://www.youtube.com/@nsk-1010'
-        }
+          url: 'https://www.youtube.com/@nsk-1010',
+        },
       ],
-      imageUrl: 'https://s.gravatar.com/avatar/465eab7f49d6f95d4132d2c774579d74?s=512'
+      imageUrl:
+        'https://s.gravatar.com/avatar/465eab7f49d6f95d4132d2c774579d74?s=512',
     },
     {
       realName: 'hamaann',
@@ -58,14 +59,14 @@ const members: memberProps = {
       link: [
         {
           name: 'twitter',
-          url: 'https://twitter.com/LljKDJzur8Be327'
+          url: 'https://twitter.com/LljKDJzur8Be327',
         },
         {
           name: 'GitHub',
-          url: 'https://github.com/hamaann'
-        }
+          url: 'https://github.com/hamaann',
+        },
       ],
-      imageUrl: 'https://avatars.githubusercontent.com/u/108327885?v=4'
+      imageUrl: 'https://avatars.githubusercontent.com/u/108327885?v=4',
     },
     {
       realName: 'Canon424',
@@ -74,20 +75,21 @@ const members: memberProps = {
       link: [
         {
           name: 'twitter',
-          url: 'https://twitter.com/@c4n4242'
+          url: 'https://twitter.com/@c4n4242',
         },
         {
           name: 'Misskey',
-          url: 'https://misskey.systems/@c4n4242'
+          url: 'https://misskey.systems/@c4n4242',
         },
         {
           name: 'GitHub',
-          url: 'https://github.com/C4NoN424'
+          url: 'https://github.com/C4NoN424',
         },
       ],
-      imageUrl: 'https://sjc1.vultrobjects.com/misskey-system/files/411ac7e8-84ee-4345-9e31-b166c9cc2c79.jpg'
+      imageUrl:
+        'https://sjc1.vultrobjects.com/misskey-system/files/411ac7e8-84ee-4345-9e31-b166c9cc2c79.jpg',
     },
-  ]
+  ],
 };
 
 export const Members = () => {

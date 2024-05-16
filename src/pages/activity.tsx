@@ -6,24 +6,24 @@ import {
   Text,
   UnorderedList,
   VStack,
-} from "@chakra-ui/react";
-import { activityCardProps, ActivityCards } from "../components/activityCard";
+} from '@chakra-ui/react';
+import { activityCardProps, ActivityCards } from '../components/activityCard';
 
 const cards: Array<activityCardProps> = [
   {
-    title: "アプリケーション系",
-    body: "Webサイト、アプリケーション、ツールなどを開発します。",
-    tag: ["Web", "Golang", "CLI"],
+    title: 'アプリケーション系',
+    body: 'Webサイト、アプリケーション、ツールなどを開発します。',
+    tag: ['Web', 'Golang', 'CLI'],
   },
   {
-    title: "システム管理系",
-    body: "部が保有しているPC、サーバーの保守管理を行います。",
-    tag: ["Linux", "ネットワーク"],
+    title: 'システム管理系',
+    body: '部が保有しているPC、サーバーの保守管理を行います。',
+    tag: ['Linux', 'ネットワーク'],
   },
   {
-    title: "メディア系",
-    body: "デジタルイラスト、DTM、モデリングなどの作品製作をします。",
-    tag: ["デジタル絵", "DTM", "モデリング"],
+    title: 'メディア系',
+    body: 'デジタルイラスト、DTM、モデリングなどの作品製作をします。',
+    tag: ['デジタル絵', 'DTM', 'モデリング'],
   },
 ];
 
@@ -33,13 +33,13 @@ export const Activity = () => {
       <Box>
         <Center>
           <VStack>
-            <Heading fontSize="xl">活動のページ</Heading>
+            <Heading fontSize='xl'>活動のページ</Heading>
             <Text>弊部では、以下のような活動を行っています</Text>
           </VStack>
         </Center>
       </Box>
 
-      <Box w={"100%"} mt="1em">
+      <Box w={'100%'} mt='1em'>
         <VStack>
           {cards.map((c) => {
             return <ActivityCards {...c} />;
@@ -50,7 +50,7 @@ export const Activity = () => {
       <Box>
         <Center>
           <VStack>
-            <Heading mt="1em" fontSize="xl">
+            <Heading mt='1em' fontSize='xl'>
               活動日/時間/場所
             </Heading>
             <Text>
@@ -61,14 +61,14 @@ export const Activity = () => {
       </Box>
 
       <Center>
-        <Heading mt="1em" fontSize="xl">
+        <Heading mt='1em' fontSize='xl'>
           設備
         </Heading>
       </Center>
 
       <Box>
         <Center>
-          <UnorderedList mt="1em">
+          <UnorderedList mt='1em'>
             <ListItem>デスクトップPC 2台</ListItem>
             <ListItem>→Windows(AMD FX, GeForce)</ListItem>
             <ListItem>→Linux(Pop! OS)(Ryzen, Radeon)</ListItem>
@@ -78,7 +78,7 @@ export const Activity = () => {
         </Center>
       </Box>
 
-      <Box mb="3em"></Box>
+      <Box mb='3em'></Box>
     </>
   );
 };

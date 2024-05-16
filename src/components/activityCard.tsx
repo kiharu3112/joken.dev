@@ -6,7 +6,7 @@ import {
   HStack,
   Text,
   CardHeader,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 
 export type activityCardProps = {
   title: string;
@@ -16,22 +16,22 @@ export type activityCardProps = {
 
 const ActivityCard = (props: activityCardProps) => {
   return (
-    <Card align="center" w="40%" minW="20em">
+    <Card align='center' w='40%' minW='20em'>
       <CardHeader>
-        <Heading size="md">{props.title}</Heading>
+        <Heading size='md'>{props.title}</Heading>
       </CardHeader>
-      <CardBody w="100%">
-        <Text fontSize="xl">
-          {props.body.split("\n").map((t) => {
+      <CardBody w='100%'>
+        <Text fontSize='xl'>
+          {props.body.split('\n').map((t) => {
             return <div>{t.match(/\n/) ? <br /> : t}</div>;
           })}
         </Text>
 
         <div>
-          <HStack mt="1em">
+          <HStack mt='1em'>
             {props.tag.map((t) => {
               return (
-                <Badge fontSize="md" colorScheme="green">
+                <Badge fontSize='md' colorScheme='green'>
                   {t}
                 </Badge>
               );
