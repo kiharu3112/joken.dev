@@ -46,7 +46,17 @@ const ProductionCard = ({ productions }: ProductionProps) => {
             <CardBody>
               <Heading size='md'>{p.name}</Heading>
               <Text py='2'>{p.description}</Text>
-              <Badge colorScheme={p.type === 'ゲーム' ? 'twitter' : p.type === 'アプリケーション' ? 'orange' : p.type === 'メディア' ? 'pink' : 'green'}>
+              <Badge
+                colorScheme={
+                  p.type === 'ゲーム'
+                    ? 'twitter'
+                    : p.type === 'アプリケーション'
+                    ? 'orange'
+                    : p.type === 'メディア'
+                    ? 'pink'
+                    : 'green'
+                }
+              >
                 {p.type}
               </Badge>
             </CardBody>
@@ -55,7 +65,15 @@ const ProductionCard = ({ productions }: ProductionProps) => {
               <HStack spacing={3} direction='row'>
                 {p.link?.map((link) => (
                   <Link href={link.url} key={link.url}>
-                    <Button colorScheme={link.name === 'GitHub' ? 'facebook' : link.name === 'YouTube' ? 'red' : 'twitter'}>
+                    <Button
+                      colorScheme={
+                        link.name === 'GitHub'
+                          ? 'facebook'
+                          : link.name === 'YouTube'
+                          ? 'red'
+                          : 'twitter'
+                      }
+                    >
                       {link.name}
                     </Button>
                   </Link>
@@ -72,4 +90,3 @@ const ProductionCard = ({ productions }: ProductionProps) => {
 export const ProductionCards = (props: ProductionProps) => {
   return <ProductionCard {...props} />;
 };
-

@@ -1,4 +1,4 @@
-import { ListItem, UnorderedList } from "@chakra-ui/react";
+import { ListItem, UnorderedList } from '@chakra-ui/react';
 
 export const AchievementsCard = ({
   achievements,
